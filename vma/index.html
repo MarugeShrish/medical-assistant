@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDICAL AI - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- App Poster -->
+        <div class="poster">
+            <img src="https://img.freepik.com/premium-vector/virtual-assistant-logo_627986-43.jpg" />
+            <h1>MEDICAL ASSISTANT</h1>
+            <p>Your Personal Virtual Medical Assistant</p>
+        </div>
+
+        <!-- Login Section -->
+        <div class="login-section">
+            <h2>Login to MEDICAL ASSISTANT</h2>
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                <input type="email" id="email" placeholder="Enter your Gmail" required>
+            </div>
+            <div class="form-group">
+                <label for="password"><i class="fas fa-lock"></i> Password:</label>
+                <input type="password" id="password" placeholder="Create your password" required>
+            </div>
+            <button onclick="loginUser()" class="btn"><i class="fas fa-sign-in-alt"></i> Login</button>
+            <p id="message"></p>
+            <p>Don't have an account? <span onclick="toggleSignup()">Sign up here</span></p>
+        </div>
+
+        <!-- Signup Section -->
+        <div class="signup-section" style="display: none;">
+            <h2>Create Your Account</h2>
+            <div class="form-group">
+                <label for="signup-name"><i class="fas fa-user"></i> Name:</label>
+                <input type="text" id="signup-name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-email"><i class="fas fa-envelope"></i> Email:</label>
+                <input type="email" id="signup-email" placeholder="Enter your Gmail" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-password"><i class="fas fa-lock"></i> Password:</label>
+                <input type="password" id="signup-password" placeholder="Create your password" required>
+            </div>
+            <button onclick="signupUser()" class="btn"><i class="fas fa-user-plus"></i> Sign Up</button>
+            <p id="signup-message"></p>
+            <p>Already have an account? <span onclick="toggleSignup()">Login here</span></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #f9f9f9;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #d1d1d1;
+}
+
+/* Profile Section */
+.profile-section, .health-info-section, .chatbot-section {
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-section h2, .health-info-section h2, .chatbot-section h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#profile-details p {
+    margin: 5px 0;
+}
+
+.edit-btn, button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn:hover, button:hover {
+    background: #45a049;
+}
+
+/* Chatbot Styles */
+.chat-box {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    color: black;
+}
+
+.chat-box .bot-msg {
+    background: #d9edf7;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 5px 0;
+    width: fit-content;
+}
+
+.chat-box .user-msg {
+    background: #d1e7dd;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 5px 0;
+    width: fit-content;
+    margin-left: auto;
+}

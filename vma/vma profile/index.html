@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - MEDIBOT AI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MEDIBOT AI</h1>
+            <p>Your Virtual Medical Assistant</p>
+        </header>
+
+        <!-- User Profile Section -->
+        <section class="profile-section">
+            <h2>User Profile</h2>
+            <div id="profile-details">
+                <p><strong>Name:</strong> <span id="profile-name">User</span></p>
+                <p><strong>Age:</strong> <span id="profile-age">N/A</span></p>
+                <p><strong>Symptoms:</strong> <span id="profile-symptoms">N/A</span></p>
+            </div>
+            <button class="edit-btn" onclick="toggleEditProfile()">Edit Profile</button>
+            <div id="edit-profile" style="display: none;">
+                <input type="text" id="edit-name" placeholder="Enter your name">
+                <input type="number" id="edit-age" placeholder="Enter your age">
+                <textarea id="edit-symptoms" placeholder="Describe your symptoms"></textarea>
+                <button onclick="saveProfile()">Save</button>
+            </div>
+        </section>
+
+        <!-- Health Information Section -->
+        <section class="health-info-section">
+            <h2>Health Problem Precautions & Instructions</h2>
+            <input type="text" id="search-bar" placeholder="Search health problems..." oninput="searchHealthProblems()" />
+            <div id="health-info">
+                <ul id="health-list"></ul>
+            </div>
+        </section>
+
+        <!-- Chatbot Section -->
+        <section class="chatbot-section">
+            <h2>AI Medical Chatbot</h2>
+            <div class="chat-box" id="chat-box">
+                <p class="bot-msg">Hello! How can I assist you with your medical concerns?</p>
+            </div>
+            <input type="text" id="user-query" placeholder="Ask your question..." />
+            <button onclick="sendMessage()">Send</button>
+        </section>
+    </div>
+
+    <script src="profile.js"></script>
+    <script src="health-data.js"></script>
+</body>
+</html>
